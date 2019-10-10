@@ -3,12 +3,12 @@ package easy;
 import java.util.Stack;
 
 public class num_155 {
-    private static Stack dataStack = new Stack();
-    private static Stack minHelpStack = new Stack();
+    private static Stack dataStack ;
+    private static Stack minHelpStack ;
 
     public num_155() {
-        /*dataStack = new Stack();
-        minHelpStack = new Stack();*/
+        dataStack = new Stack();
+        minHelpStack = new Stack();
     }
 
     static int minValue = Integer.MAX_VALUE;
@@ -24,8 +24,10 @@ public class num_155 {
     }
 
     public static void pop() {
-        dataStack.pop();
-        minHelpStack.pop();
+        if (!dataStack.empty()){
+            dataStack.pop();
+            minHelpStack.pop();
+        }
     }
 
     public static int top() {
@@ -33,7 +35,10 @@ public class num_155 {
     }
 
     public static int getMin() {
-        return (int) minHelpStack.peek();
+        if (!minHelpStack.empty()){
+            return (int) minHelpStack.peek();
+        }
+        throw new RuntimeException("栈空");
     }
 
     public static void main(String[] args) {
