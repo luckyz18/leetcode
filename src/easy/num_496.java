@@ -7,6 +7,7 @@ public class num_496 {
     static Map<Integer, Integer> map2 = new LinkedHashMap();
     static List resList = new ArrayList();
 
+    //1. 解法不好 时间复杂度 O（n ^ 2） ,基本上还是两层for循环的暴力解法，比暴力解法还麻烦====
     public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
         int len1 = nums1.length;
         int len2 = nums2.length;
