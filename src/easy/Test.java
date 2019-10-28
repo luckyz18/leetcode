@@ -75,8 +75,18 @@ public class Test {
 
 
     public static void main(String[] args) {
-        List<Integer> integers = majorityElement(new int[]{2, 2});
-        System.out.println(integers);
+        List<String> list = new ArrayList();
+        list.add("1");
+        list.add("13");
+        list.add("C");
+        //for (int i = 0; i < list.size(); i++) {
+        //    String o = list.get(i);
+        //    if (Character.isDigit(){
+        //        System.out.println("000000");
+        //    }
+        //
+        //}
+
 
     }
 }
