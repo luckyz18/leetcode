@@ -4,18 +4,22 @@ import java.util.Objects;
 
 public class num_622 {
     /**
-     * 用数组实现循环队列
+     * 用数组实现循环队列  != 循环双端队列
+     * 循环双端队列 ：在双端队列的基础上  + 头部插入 尾部删除
      */
     static class MyCircularQueue {
+        //可以在这个基础上加一个 num 来记录元素的个数
         private Object[] elementData;
         int front;
         int rear;
         int size;
+        int num;
         public MyCircularQueue(int k) {
             elementData = new Object[k];
-            front=0;
-            rear=0;
+            front = 0;
+            rear = 0;
             size = k;
+            num = 0;
         }
 
         public boolean enQueue(int value) {
@@ -25,6 +29,7 @@ public class num_622 {
             }
             elementData[rear++] = value;
             rear = rear == size ? 0 : rear;
+            num++;
             return true;
         }
 
@@ -35,6 +40,7 @@ public class num_622 {
             }
             elementData[front++] = null;
             front = front == size? 0 : front;
+            num--;
             return true;
         }
 
@@ -52,14 +58,20 @@ public class num_622 {
         }
 
         public boolean isEmpty() {
-            if (front == rear && elementData[rear] == null){
+            //if (front == rear && elementData[rear] == null){
+            //    return true;
+            //}
+            if (num == 0){
                 return true;
             }
             return false;
         }
 
         public boolean isFull() {
-            if (front == rear && elementData[front] != null){
+            //if (front == rear && elementData[front] != null){
+            //    return true;
+            //}
+            if (num == size){
                 return true;
             }
             return false;
