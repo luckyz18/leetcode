@@ -64,7 +64,7 @@ public class num_24 {
             ListNode start = temp.next;
             ListNode end = temp.next.next;
 
-            temp.next = end;
+            temp.next = end;  //这里的temp很巧妙的变成了 上一段的尾节点 和下一段联系了起来
             start.next = end.next;
             end.next = start;
             temp = start;
