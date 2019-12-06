@@ -45,6 +45,47 @@ public class num_199 {
         return list;
     }
 
+    // 层次遍历中用size 分层
+    public List<Integer> rightSideView3(TreeNode root) {
+        if (root == null)
+            return new ArrayList();
+        Queue<TreeNode> queue = new LinkedList();
+        queue.offer(root);
+        List<Integer> res = new ArrayList();
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            while (size -- > 0){
+                TreeNode cur = queue.poll();
+                if (size == 0)
+                    res.add(cur.val);
+
+                if (cur.left != null)
+                    queue.offer(cur.left);
+                if (cur.right != null)
+                    queue.offer(cur.right);
+            }
+        }
+        return res;
+    }
+
+    //一种巧妙的思想  还是层次遍历比较好理解
+    public static List<Integer> rightSideView2(TreeNode root) {
+        List<Integer> result = new ArrayList<Integer>();
+        rightView(root, result, 0);
+        return result;
+    }
+
+    public static void rightView(TreeNode curr, List<Integer> result, int currDepth){
+        if(curr == null){
+            return;
+        }
+        if(currDepth == result.size()){
+            result.add(curr.val);
+        }
+        rightView(curr.right, result, currDepth + 1);
+        rightView(curr.left, result, currDepth + 1);
+    }
+
 
     public static void main(String[] args) {
         TreeNode head = new TreeNode(1);
@@ -54,7 +95,7 @@ public class num_199 {
         head.right = new TreeNode(3);
         head.right.left = new TreeNode(4);
 
-        List<Integer> integers = rightSideView(head);
+        List<Integer> integers = rightSideView2(head);
         System.out.println();
     }
 }
