@@ -40,14 +40,17 @@ public class num_449 {
     }
 
     private TreeNode reConByPreOrder(Queue<String> queue) {
-        String poll = queue.poll();
-        if (poll.equals("#")) {
-            return null;
+        if (!queue.isEmpty()){
+            String poll = queue.poll();
+            if (poll.equals("#")) {
+                return null;
+            }
+            TreeNode head = new TreeNode(Integer.parseInt(poll));
+            head.left = reConByPreOrder(queue);
+            head.right = reConByPreOrder(queue);
+            return head;
         }
-        TreeNode head = new TreeNode(Integer.valueOf(poll));
-        head.left = reConByPreOrder(queue);
-        head.right = reConByPreOrder(queue);
-        return head;
+        return null;
     }
 
     /**
@@ -59,23 +62,23 @@ public class num_449 {
         }
         Queue<TreeNode> queue = new LinkedList();
         queue.add(root);
-        String res = root.val + "!";
+        StringBuilder res = new StringBuilder(root.val + "!");
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
             if (node.left != null) {
-                res += node.left.val + "!";
+                res.append(node.left.val).append("!");
                 queue.add(node.left);
             } else {
-                res += "#!";
+                res.append("#!");
             }
             if (node.right != null) {
-                res += node.right.val + "!";
+                res.append(node.right.val).append("!");
                 queue.add(node.right);
             } else {
-                res += "#!";
+                res.append("#!");
             }
         }
-        return res;
+        return res.toString();
     }
 
     public static TreeNode deserialize2(String data) {
@@ -107,7 +110,7 @@ public class num_449 {
         if (s.equals("#")) {
             return null;
         }
-        return new TreeNode(Integer.valueOf(s));
+        return new TreeNode(Integer.parseInt(s));
     }
 
     public static void main(String[] args) {
