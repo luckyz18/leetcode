@@ -1,7 +1,5 @@
 package medium;
 
-import com.sun.xml.internal.ws.api.pipe.NextAction;
-
 public class num_148 {
 
     public static class ListNode {
