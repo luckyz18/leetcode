@@ -2,6 +2,9 @@ package medium;
 
 import java.util.Stack;
 
+/**
+ * 二叉搜索树迭代器
+ */
 public class num_173 {
     public class TreeNode {
       int val;

@@ -4,6 +4,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
+/**
+ * 二叉树的最大深度
+ */
 public class num_104 {
     public static class TreeNode {
         int val;

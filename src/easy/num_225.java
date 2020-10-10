@@ -8,6 +8,7 @@ import java.util.Queue;
  * 思路2： ；两个队列，q1 里边的假设已经是栈的顺序
  * 思路3： 一个队列  在原队列上进行反转
  */
+//用队列实现栈
 public class num_225 {
     private Queue dataQueue;
     private Queue helpQueue;

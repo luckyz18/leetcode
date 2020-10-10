@@ -1,5 +1,8 @@
 package medium;
 
+/**
+ * 分隔链表
+ */
 public class num_725 {
 
     public static class ListNode {

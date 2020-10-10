@@ -2,6 +2,9 @@ package easy;
 
 import java.util.Stack;
 
+/**
+ * 用栈实现队列
+ */
 public class num_232 {
     /** Initialize your data structure here. */
     private Stack stack;

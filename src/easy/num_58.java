@@ -1,5 +1,8 @@
 package easy;
 
+/**
+ * 最后一个单词的长度
+ */
 public class num_58 {
     public static int lengthOfLastWord(String s) {
         s = s.trim();

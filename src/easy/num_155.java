@@ -2,6 +2,9 @@ package easy;
 
 import java.util.Stack;
 
+/**
+ * 最小栈
+ */
 public class num_155 {
     private static Stack dataStack ;
     private static Stack minHelpStack ;

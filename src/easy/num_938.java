@@ -1,5 +1,8 @@
 package easy;
 
+/**
+ * 二叉搜索树的范围和
+ */
 public class num_938 {
     public static class TreeNode {
         int val;

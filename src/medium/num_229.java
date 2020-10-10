@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 求众数 II
+ */
 public class num_229 {
     //摩尔投票  最多只有两个
     static class Solution {

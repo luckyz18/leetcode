@@ -2,7 +2,7 @@ package medium;
 
 import java.util.LinkedList;
 import java.util.Stack;
-
+//字符串解码
 public class num_394 {
 
     public static String decodeString(String s) {

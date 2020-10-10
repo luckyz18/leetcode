@@ -5,6 +5,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * 二叉树的后序遍历
+ */
 public class num_145 {
     public static class TreeNode {
         int val;

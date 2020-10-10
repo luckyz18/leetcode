@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/**
+ * 二叉树的右视图
+ */
 public class num_199 {
     public static class TreeNode {
         int val;
@@ -37,7 +40,7 @@ public class num_199 {
                 queue.add(node.right);
                 nLast = node.right;
             }
-            if (node == last ){
+            if (node == last ){    //遍历层的最后一个节点  这里可以做点手脚 当换行的时候 那么下一次弹出的一定是第一个节点（找最左的时候）
                 list.add(node.val);
                 last = nLast;
             }
@@ -48,17 +51,17 @@ public class num_199 {
     // 层次遍历中用size 分层
     public List<Integer> rightSideView3(TreeNode root) {
         if (root == null)
-            return new ArrayList();
-        Queue<TreeNode> queue = new LinkedList();
+            return new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-        List<Integer> res = new ArrayList();
+        List<Integer> res = new ArrayList<>();
         while(!queue.isEmpty()){
             int size = queue.size();
             while (size -- > 0){
                 TreeNode cur = queue.poll();
-                if (size == 0)
+                if (size == 0) {   //只要最后一个节点可以这么写 第一个节点就不好说了，可以用另一个变量存 然后跟size 比较，
                     res.add(cur.val);
-
+                }
                 if (cur.left != null)
                     queue.offer(cur.left);
                 if (cur.right != null)

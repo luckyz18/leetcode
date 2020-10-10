@@ -1,5 +1,9 @@
 package easy;
 
+/**
+ *
+ * 翻转图像
+ */
 public class num_832 {
     /**
      * 先反转再异或 或者  先异或再反转 一样

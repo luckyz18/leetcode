@@ -1,5 +1,5 @@
 package medium;
-
+//分隔链表
 public class num_86 {
     static class ListNode {
         int val;

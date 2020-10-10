@@ -1,5 +1,8 @@
 package easy;
 
+/**
+ * 移除元素
+ */
 public class num_27 {
     public static int removeElement(int[] nums, int val) {
         int i = 0;

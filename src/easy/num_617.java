@@ -4,6 +4,9 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 合并二叉树
+ */
 public class num_617 {
     public static class TreeNode {
         int val;

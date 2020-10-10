@@ -1,5 +1,8 @@
 package easy;
 
+/**
+ * 最长公共前缀
+ */
 public class num_14 {
     public static String longestCommonPrefix(String[] strs) {
         if (strs.length==0){

@@ -6,6 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+/*外观数列*/
 public class num_38 {
     static Map<Integer, String> map = new LinkedHashMap();
     static {

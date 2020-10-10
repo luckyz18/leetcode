@@ -1,6 +1,10 @@
 package easy;
 
 //没pass
+
+/**
+ * 合并两个有序链表
+ */
 public class num_21 {
 
     public static class ListNode {

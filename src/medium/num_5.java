@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
+/**
+ * 最长回文子串
+ */
 public class num_5 {
 
     /**

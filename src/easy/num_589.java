@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
-
+/*N叉树的前序遍历*/
 public class num_589 {
     static class Node {
         public int val;

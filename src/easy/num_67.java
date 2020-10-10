@@ -1,7 +1,8 @@
 package easy;
 
-import java.util.Stack;
-
+/**
+ * 二进制求和
+ */
 public class num_67 {
     public static  String addBinary(String a, String b) {
         int maxLen = Math.max(a.length(),b.length());

@@ -3,6 +3,9 @@ package easy;
 import java.util.HashMap;
 import java.util.Stack;
 
+/**
+ * 有效的括号
+ */
 public class num_20 {
     public static boolean isValid(String s) {
         Stack<Object> stack = new Stack<>();

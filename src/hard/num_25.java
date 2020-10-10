@@ -3,6 +3,9 @@ package hard;
 
 import java.util.Stack;
 
+/**
+ * K个一组翻转链表
+ */
 public class num_25 {
     static class ListNode {
         int value;

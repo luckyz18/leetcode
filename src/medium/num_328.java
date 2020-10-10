@@ -1,5 +1,8 @@
 package medium;
 
+/**
+ * 奇偶链表
+ */
 public class num_328 {
     static class ListNode {
         int value;
@@ -49,7 +52,9 @@ public class num_328 {
      * @return
      */
     public static  ListNode oddEvenList2(ListNode head) {
-        if (head == null) return null;
+        if (head == null){
+            return null;
+        }
         ListNode odd = head, even = head.next, evenHead = even;
         while (even != null && even.next != null) {
             odd.next = even.next;

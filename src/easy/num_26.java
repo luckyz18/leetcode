@@ -1,5 +1,8 @@
 package easy;
 
+/**
+ * 删除排序数组中的重复项
+ */
 public class num_26 {
 
     public  static  int removeDuplicates(int[] nums) {

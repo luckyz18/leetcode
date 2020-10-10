@@ -2,6 +2,9 @@ package easy;
 
 import java.util.Stack;
 
+/**
+ * 比较含退格的字符串
+ */
 public class num_844 {
     static Stack stack;
 

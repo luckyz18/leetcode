@@ -1,5 +1,6 @@
 package easy;
 
+//两数之和
 public class num_1 {
     public static  int[] twoSum(int[] nums, int target) {
         int[] res = new int[2];

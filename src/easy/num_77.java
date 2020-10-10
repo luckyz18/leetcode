@@ -1,5 +1,8 @@
 package easy;
 
+/**
+ * 组合
+ */
 public class num_77 {
     public static int climbStairs(int n) {
         if (n==1){

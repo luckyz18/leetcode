@@ -1,5 +1,8 @@
 package medium;
 
+/**
+ * 二叉树剪枝
+ */
 public class num_814 {
     public static class TreeNode {
         int val;

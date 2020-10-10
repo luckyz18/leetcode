@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-//删除最外层的括号
+
+/**
+ * 删除最外层的括号
+ */
 public class num_1021 {
     static Stack stack = new Stack();
     static List<String> list = new ArrayList<>();

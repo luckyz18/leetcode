@@ -9,6 +9,10 @@ import java.util.Stack;
 //单调栈的模板
 //单调栈一个是向前扫描 一个是向后扫描
 // 单调栈解决 Next Greater Number 一类问题
+
+/**
+ * 下一个更大元素
+ */
 public class num_496_2 {
     //从第一个元素入栈
 

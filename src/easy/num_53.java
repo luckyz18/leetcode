@@ -1,5 +1,6 @@
 package easy;
 
+/*最大子序和*/
 public class num_53 {
     //分治  有错误
     /*public static int maxSubArray(int[] nums) {

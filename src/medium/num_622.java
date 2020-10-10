@@ -2,6 +2,9 @@ package medium;
 
 import java.util.Objects;
 
+/**
+ * 设计循环队列
+ */
 public class num_622 {
     /**
      * 用数组实现循环队列  != 循环双端队列

@@ -3,6 +3,9 @@ package easy;
 import java.util.HashSet;
 import java.util.Stack;
 
+/**
+ * 删除字符串中的所有相邻重复项
+ */
 public class num_1047 {
 
     // 有问题  这个是删除一串的 bbb 题意是只删除“两个”

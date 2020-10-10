@@ -1,5 +1,8 @@
 package medium;
 
+/**
+ * 先序遍历构造二叉树
+ */
 public class num_1008 {
     public static class TreeNode {
         int val;

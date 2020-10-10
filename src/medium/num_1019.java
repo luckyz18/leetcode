@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+//链表中的下一个更大节点
 public class num_1019 {
     static class ListNode {
         int value;

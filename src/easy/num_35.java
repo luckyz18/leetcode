@@ -2,7 +2,7 @@ package easy;
 
 import java.util.Arrays;
 import java.util.List;
-
+/*搜索插入位置*/
 public class num_35 {
     public static  int searchInsert(int[] nums, int target) {
         int i= 0;

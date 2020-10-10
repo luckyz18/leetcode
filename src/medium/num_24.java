@@ -1,6 +1,6 @@
 package medium;
 
-
+//两两交换链表中的节点
 public class num_24 {
 
     public static class ListNode {

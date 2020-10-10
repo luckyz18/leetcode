@@ -5,6 +5,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * 链表组件
+ */
 public class num_817 {
 
     public static class ListNode {

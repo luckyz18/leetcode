@@ -1,5 +1,8 @@
 package easy;
 
+/**
+ * 二叉搜索树中的搜索
+ */
 public class num_700 {
     public static class TreeNode {
         int val;

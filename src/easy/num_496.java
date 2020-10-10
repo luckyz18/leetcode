@@ -2,6 +2,9 @@ package easy;
 
 import java.util.*;
 
+/**
+ * 下一个更大元素
+ */
 public class num_496 {
     static Map<Integer, Integer> map = new LinkedHashMap();
     static Map<Integer, Integer> map2 = new LinkedHashMap();

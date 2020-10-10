@@ -1,5 +1,5 @@
 package easy;
-
+/*实现 strStr()*/
 public class num_28 {
     public int strStr(String haystack, String needle) {
         if ("".equals(needle)){

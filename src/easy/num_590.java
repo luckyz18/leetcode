@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
+/*N叉树的后序遍历*/
 
 public class num_590 {
     static class Node {

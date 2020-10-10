@@ -1,5 +1,8 @@
 package easy;
 
+/**
+ * 加一
+ */
 public class num_66 {
     public static int[] plusOne(int[] digits) {
         if (digits.length >0 && digits[0]==0){

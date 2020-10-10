@@ -2,6 +2,9 @@ package easy;
 
 import java.util.Stack;
 
+/**
+ * 反转链表
+ */
 public class num_206 {
     static class ListNode {
         int value;

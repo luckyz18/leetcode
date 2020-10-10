@@ -2,6 +2,10 @@ package easy;
 
 import javax.swing.undo.CannotUndoException;
 
+/**
+ *
+ * 删除排序链表中的重复元素
+ */
 public class num_83 {
     public static class ListNode {
         int val;

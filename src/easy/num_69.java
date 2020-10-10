@@ -1,6 +1,10 @@
 package easy;
 
 //有错
+
+/**
+ * x的平方根
+ */
 public class num_69 {
     public static int mySqrt(int x) {
         if (x ==0) {

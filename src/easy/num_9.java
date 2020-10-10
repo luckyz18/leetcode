@@ -2,6 +2,9 @@ package easy;
 
 import java.util.Stack;
 
+/**
+ * 回文数
+ */
 public class num_9 {
     public static  boolean isPalindrome(int x) {
         if(x < 0){

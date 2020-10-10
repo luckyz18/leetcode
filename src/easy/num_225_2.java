@@ -3,6 +3,9 @@ package easy;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 用队列实现栈
+ */
 public class num_225_2 {
 
     private Queue dataQueue;

@@ -2,7 +2,7 @@ package medium;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//从链表中删去总和值为零的连续节点
 public class num_1171 {
     public static class ListNode {
         int val;
