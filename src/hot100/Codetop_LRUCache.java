@@ -6,7 +6,7 @@ import java.util.HashMap;
  * 1、使用双向链表：因为在删除尾节点时， 要定位到上一个节点，不要遍历链表；
  * 2、为什么Node节点要存储 key+value, 因为在移除尾节点时，需要通过key删除map中的node
  */
-public class Codetop_LruCache {
+public class Codetop_LRUCache {
 
     static  class Node{
         int key;
@@ -24,7 +24,7 @@ public class Codetop_LruCache {
     private Node tail;
     private int capacity;
 
-    public Codetop_LruCache(int capacity){
+    public Codetop_LRUCache(int capacity){
         this.capacity = capacity;
         map = new HashMap<>();
         head = new Node(-1,-1);
@@ -78,8 +78,6 @@ public class Codetop_LruCache {
         Node next = node.next;
         pre.next = next;
         next.pre = pre;
-        node.pre = null;
-        node.next = null;
     }
 
 
