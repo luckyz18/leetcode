@@ -38,6 +38,7 @@ public class Codetop_lengthOfLongestSubstring {
         for (int i = 0; i < s.length(); i++) {
             if (map.containsKey(s.charAt(i))) {
                 left = Math.max(left, map.get(s.charAt(i)) + 1);
+                //left = map.get(s.charAt(i)) + 1;
             }
             map.put(s.charAt(i), i);
             max = Math.max(max, i - left + 1);
@@ -46,7 +47,7 @@ public class Codetop_lengthOfLongestSubstring {
     }
 
     public static void main(String[] args) {
-        int len = lengthOfLongestSubstring("pwwkew");
+        int len = lengthOfLonestSubString2("abba");
         System.out.println(len);
     }
 
