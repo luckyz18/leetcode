@@ -79,7 +79,7 @@ public class Codetop_LFU {
             list.addFirst(node);
             frequencyMap.put(fre+1, list);
         } else {
-            // 1. 容量如果超过，把freMap minFre移除尾结点 2. 写入map, fremap
+            // 1. 容量如果超过，把freMap minFre移除尾结点, data移除 2. 写入map, fremap
             if (dataMap.size() == capacity){
                 LinkedList<Node> nodes = frequencyMap.get(minFrequency);
                 dataMap.remove(nodes.peekLast().key);
@@ -88,7 +88,7 @@ public class Codetop_LFU {
                     frequencyMap.remove(minFrequency);
                 }
             }
-            //第一次加到缓存
+            //第一次加到 dataMap freMap
             LinkedList<Node> firstList = frequencyMap.getOrDefault(1, new LinkedList<>());
             Node newNode = new Node(key, value, 1);
             firstList.offerFirst(newNode);
