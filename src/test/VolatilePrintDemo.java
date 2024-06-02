@@ -1,4 +1,6 @@
-public class PrintDemo {
+package test;
+
+public class VolatilePrintDemo {
     private volatile int flag = 1;
 
     class Thread1 implements Runnable {
@@ -38,7 +40,7 @@ public class PrintDemo {
     }
 
     public static void main(String[] args) {
-        PrintDemo print123 = new PrintDemo();
+        VolatilePrintDemo print123 = new VolatilePrintDemo();
         new Thread(print123.new Thread1()).start();
         new Thread(print123.new Thread2()).start();
         new Thread(print123.new Thread3()).start();
