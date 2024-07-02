@@ -1,4 +1,4 @@
-package test;
+package interview;
 
 /**
  * 蛇形数组打印

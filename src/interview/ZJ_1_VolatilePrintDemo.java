@@ -1,4 +1,4 @@
-package test;
+package interview;
 
 /**
  * 多线程交叉打印 1 2 3 1 2 3...

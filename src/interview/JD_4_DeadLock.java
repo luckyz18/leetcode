@@ -1,4 +1,4 @@
-package test;
+package interview;
 
 /**
  * JD 四面 ： 模拟死锁
