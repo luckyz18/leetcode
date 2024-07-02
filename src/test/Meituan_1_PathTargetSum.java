@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 美团一面， 二叉树路径和 = target
  */
-public class PathTargetSum {
+public class Meituan_1_PathTargetSum {
     static class TreeNode{
         int value;
         TreeNode left;

@@ -1,6 +1,9 @@
 package test;
 
-public class VolatilePrintDemo {
+/**
+ * 多线程交叉打印 1 2 3 1 2 3...
+ */
+public class ZJ_1_VolatilePrintDemo {
     private volatile int flag = 1;
 
     class Thread1 implements Runnable {
@@ -40,7 +43,7 @@ public class VolatilePrintDemo {
     }
 
     public static void main(String[] args) {
-        VolatilePrintDemo print123 = new VolatilePrintDemo();
+        ZJ_1_VolatilePrintDemo print123 = new ZJ_1_VolatilePrintDemo();
         new Thread(print123.new Thread1()).start();
         new Thread(print123.new Thread2()).start();
         new Thread(print123.new Thread3()).start();
